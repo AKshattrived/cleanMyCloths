@@ -20,6 +20,8 @@
 #navbar::before {
   content: "";
   position: absolute;
+  top: 0px;
+  left: 0px;
   height: 100%;
   width: 100%;
   z-index: -100;
@@ -36,7 +38,7 @@
 }
 
 #navbar #logo img {
-  width: 5vw;
+  width: 75px;
   opacity: 0.7;
   filter: invert();
   /* border: 2px solid yellow; */
@@ -72,17 +74,19 @@
 #home {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
-  padding: 1vh 12vw;
-  height: 50vh;
+  /* border: 2px solid green; */
+  padding: 3px 200px;
+  height: 550px;
   justify-content: center;
   align-items: center;
 }
 #home::before {
   content: "";
   position: absolute;
-  height: 100%;
+  top: 0px;
+  left: 0px;
   width: 100%;
+  height: 650px;
   z-index: -101;
   opacity: 0.87;
   background: url("../img/bg2.jpg") no-repeat center center/cover;
@@ -98,10 +102,37 @@
   font-family: "Bree Serif", serif;
 }
 
+/* *Services Section */
+#services {
+  display: flex;
+  margin: 35px;
+}
+#services .box {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 3px 15px;
+  border-radius: 23px;
+  background-color: rgb(224, 224, 224);
+}
+#services .box img {
+  width: 150px;
+  border-radius: 75px;
+  display: block;
+  margin: auto;
+}
+#services p {
+  font-family: "Bree Serif", serif;
+}
+
 /* *Utility Classes */
 .h-primary {
   font-size: 3rem;
   padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 10px;
   font-family: "Bree Serif", serif;
 }
 
@@ -115,4 +146,8 @@
   font-family: "Bree Serif", serif;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.center {
+  text-align: center;
 }
