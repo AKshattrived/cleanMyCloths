@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1000px)"
+      href="css/media.css"
+    />
   </head>
   <body>
     <nav id="navbar">
@@ -19,10 +24,10 @@
         <img src="img/mainLogo.png" alt="cleanmycloths.com" />
       </div>
       <ul>
-        <li class="item"><a href="#">Home</a></li>
-        <li class="item"><a href="#">Services</a></li>
-        <li class="item"><a href="#">About Us</a></li>
-        <li class="item"><a href="#">Contact Us</a></li>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#services-container">Services</a></li>
+        <li class="item"><a href="#about-container">About Us</a></li>
+        <li class="item"><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
 
@@ -36,7 +41,7 @@
       </p>
       <button class="btn">Book Service Now</button>
     </section>
-    <section class="services-container">
+    <section id="services-container">
       <h1 class="h-primary center">Our Services</h1>
       <div id="services">
         <div class="box">
@@ -48,6 +53,7 @@
             quasi, cumque minus repudiandae esse nihil exercitationem officia
             voluptatibus vel labore nostrum soluta? Tempora, dolor?
           </p>
+          <button class="btn">Book Now</button>
         </div>
         <div class="box">
           <img src="img/dryClean.jpg" alt="logo" />
@@ -58,6 +64,7 @@
             quasi, cumque minus repudiandae esse nihil exercitationem officia
             voluptatibus vel labore nostrum soluta? Tempora, dolor?
           </p>
+          <button class="btn">Book Now</button>
         </div>
         <div class="box">
           <img src="img/iron1.jpg" alt="logo" />
@@ -68,6 +75,7 @@
             quasi, cumque minus repudiandae esse nihil exercitationem officia
             voluptatibus vel labore nostrum soluta? Tempora, dolor?
           </p>
+          <button class="btn">Book Now</button>
         </div>
         <div class="box">
           <img src="img/doorstep1.jpg" alt="logo" />
@@ -80,6 +88,7 @@
             quasi, cumque minus repudiandae esse nihil exercitationem officia
             voluptatibus vel labore nostrum soluta? Tempora, dolor?
           </p>
+          <button class="btn">Book Now</button>
         </div>
       </div>
     </section>
@@ -99,7 +108,11 @@
           quod accusantium, autem eaque repellat fugit doloremque atque dolore
           perspiciatis inventore maiores ipsum pariatur adipisci explicabo
           ipsam! Tenetur ea nihil ut! Aliquid incidunt voluptas minus blanditiis
-          nam hic reprehenderit fuga aperiam dicta perferendis?
+          nam hic reprehenderit fuga aperiam dicta perferendis?Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Quam enim, fugit sint dolore
+          sequi accusamus aut obcaecati fuga maiores? Saepe molestiae
+          voluptatibus expedita facere fugit! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Tenetur maxime, hic nisi eligendi
         </p>
       </div>
     </section>
@@ -128,7 +141,7 @@
           <div class="form-group">
             <label for="phone">Phone Number:</label>
             <input
-              type="phone"
+              type="text"
               name="phone"
               id="phone"
               placeholder="Enter Your Phone Number"
@@ -137,6 +150,9 @@
           <div class="form-group">
             <label for="msg">Message:</label>
             <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn">Submit</button>
           </div>
         </form>
       </div>

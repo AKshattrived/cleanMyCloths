@@ -1,0 +1,80 @@
+/* *Navigation Bar */
+#navbar {
+  flex-direction: column;
+}
+#navbar ul li a {
+  padding: 0px 6px;
+  font-size: 1rem;
+}
+#navbar #logo img {
+  width: 55px;
+}
+
+/* *Home Section */
+#home {
+  padding: 20px;
+  height: 390px;
+}
+#home::before {
+  height: 550px;
+}
+#home p {
+  font-size: 0.8rem;
+}
+
+/* *Services Section */
+#services {
+  flex-direction: column;
+  margin: 15px;
+}
+#services .box {
+  margin: 3px 10px;
+}
+#services .box img {
+  width: 100px;
+  border-radius: 50px;
+}
+#services .box p {
+  font-size: 0.8rem;
+}
+
+/* *About Section */
+#about-container {
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+#about {
+  flex-direction: column;
+}
+#about img {
+  width: 200px;
+  border-radius: 100px;
+  margin: 10px;
+}
+#about p {
+  margin: 25px;
+  font-size: 00.8rem;
+}
+
+/* *Contact Section */
+#contact-box input,
+#contact-box textarea,
+#contact-box label {
+  font-size: 00.8rem;
+}
+/* *Footer */
+
+/* *Utility Classes */
+.h-primary {
+  font-size: 1.7rem;
+  padding: 5px;
+}
+.h-secondary {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.btn {
+  margin: 8px;
+  font-size: 00.8rem;
+}
